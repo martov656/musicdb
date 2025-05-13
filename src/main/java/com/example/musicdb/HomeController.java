@@ -8,6 +8,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "Welcome to the Music Database!";
+        return "Welcome to the Music Database! Vítejte v rockové databázy.";
     }
 }
