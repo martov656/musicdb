@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+</head>
+<body>
+<h1>Albums</h1>
+<ul>
+    <th:block th:each="album : ${albums}">
+        <li th:text="'Title: ' + ${album.title} + ' (Year: ' + ${album.releaseYear} + ')'"></li>
+    </th:block>
+</ul>
+</body>
+</html>
